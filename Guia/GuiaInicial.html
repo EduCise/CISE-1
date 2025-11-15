@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etiquetas HTML, CSS y JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <button id="prevBtn" onclick="changeSlide(-1)">← Anterior</button>
+        <button id="nextBtn" onclick="changeSlide(1)">Siguiente →</button>
+      </div>
+      <div class="slide-counter">
+        <span id="slideNumber">1</span> / <span id="totalSlides">15</span>
+      </div>
+
+      <!-- Slide 1: Portada -->
+      <div class="slide active">
+        <div class="intro">
+          <h1>🚀 Guía Completa de Etiquetas</h1>
+          <h2>HTML, CSS y JavaScript</h2>
+          <p>
+            Bienvenidos a esta guía de referencia de las 50 etiquetas más
+            utilizadas
+          </p>
+          <div>
+            <span class="language-badge html-badge">HTML</span>
+            <span class="language-badge css-badge">CSS</span>
+            <span class="language-badge js-badge">JavaScript</span>
+          </div>
+          <p style="margin-top: 40px; font-size: 1.2em; color: #777">
+            Usa los botones de navegación para explorar cada sección
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 2: HTML 1-10 -->
+      <div class="slide">
+        <h2>
+          <span class="language-badge html-badge">HTML</span> Etiquetas 1-10
+        </h2>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 20%">Etiqueta</th>
+              <th>Explicación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag-name">&lt;html&gt;</span></td>
+              <td>Raíz del documento HTML, contiene todo el contenido</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;head&gt;</span></td>
+              <td>Contiene metadatos, título y enlaces a recursos (CSS, JS)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;title&gt;</span></td>
+              <td>Define el título que aparece en la pestaña del navegador</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;body&gt;</span></td>
+              <td>Contiene todo el contenido visible de la página</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;h1&gt;-&lt;h6&gt;</span></td>
+              <td>
+                Encabezados de diferentes niveles (h1 es el más importante)
+              </td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;p&gt;</span></td>
+              <td>Define un párrafo de texto</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;a&gt;</span></td>
+              <td>Crea un enlace a otra página o recurso (atributo href)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;div&gt;</span></td>
+              <td>Contenedor genérico de bloque para agrupar elementos</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;span&gt;</span></td>
+              <td>Contenedor genérico en línea para estilizar texto</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;img&gt;</span></td>
+              <td>Inserta una imagen (atributos src y alt)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Slide 3: HTML 11-20 -->
+      <div class="slide">
+        <h2>
+          <span class="language-badge html-badge">HTML</span> Etiquetas 11-20
+        </h2>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 20%">Etiqueta</th>
+              <th>Explicación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag-name">&lt;ul&gt;</span></td>
+              <td>Lista no ordenada (con viñetas)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;ol&gt;</span></td>
+              <td>Lista ordenada (con números)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;li&gt;</span></td>
+              <td>Elemento de lista (se usa dentro de ul o ol)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;table&gt;</span></td>
+              <td>Define una tabla</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;tr&gt;</span></td>
+              <td>Fila de una tabla</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;td&gt;</span></td>
+              <td>Celda de datos en una tabla</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;th&gt;</span></td>
+              <td>Celda de encabezado en una tabla</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;form&gt;</span></td>
+              <td>Contenedor para elementos de formulario</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;input&gt;</span></td>
+              <td>Campo de entrada de datos (texto, email, password, etc.)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;button&gt;</span></td>
+              <td>Botón clicable</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Slide 4: HTML 21-30 -->
+      <div class="slide">
+        <h2>
+          <span class="language-badge html-badge">HTML</span> Etiquetas 21-30
+        </h2>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 20%">Etiqueta</th>
+              <th>Explicación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag-name">&lt;label&gt;</span></td>
+              <td>Etiqueta descriptiva para un elemento de formulario</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;textarea&gt;</span></td>
+              <td>Campo de texto multilínea</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;select&gt;</span></td>
+              <td>Menú desplegable de selección</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;option&gt;</span></td>
+              <td>Opción dentro de un select</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;br&gt;</span></td>
+              <td>Salto de línea</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;hr&gt;</span></td>
+              <td>Línea horizontal separadora</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;strong&gt;</span></td>
+              <td>Texto con importancia fuerte (generalmente negrita)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;em&gt;</span></td>
+              <td>Texto con énfasis (generalmente cursiva)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;header&gt;</span></td>
+              <td>Encabezado de la página o sección</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;footer&gt;</span></td>
+              <td>Pie de página o sección</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Slide 5: HTML 31-40 -->
+      <div class="slide">
+        <h2>
+          <span class="language-badge html-badge">HTML</span> Etiquetas 31-40
+        </h2>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 20%">Etiqueta</th>
+              <th>Explicación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag-name">&lt;nav&gt;</span></td>
+              <td>Sección de navegación con enlaces</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;section&gt;</span></td>
+              <td>Sección temática del contenido</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;article&gt;</span></td>
+              <td>Contenido independiente y autocontenido</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;aside&gt;</span></td>
+              <td>Contenido relacionado o lateral</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;main&gt;</span></td>
+              <td>Contenido principal del documento</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;meta&gt;</span></td>
+              <td>Metadatos sobre el documento (charset, viewport, etc.)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;link&gt;</span></td>
+              <td>Vincula recursos externos (CSS, favicon, etc.)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;script&gt;</span></td>
+              <td>Inserta o vincula código JavaScript</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;style&gt;</span></td>
+              <td>Define estilos CSS internos</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;video&gt;</span></td>
+              <td>Inserta un video</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Slide 6: HTML 41-50 -->
+      <div class="slide">
+        <h2>
+          <span class="language-badge html-badge">HTML</span> Etiquetas 41-50
+        </h2>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 20%">Etiqueta</th>
+              <th>Explicación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag-name">&lt;audio&gt;</span></td>
+              <td>Inserta un archivo de audio</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;canvas&gt;</span></td>
+              <td>Área de dibujo para gráficos con JavaScript</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;iframe&gt;</span></td>
+              <td>Incrusta otra página HTML dentro del documento</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;code&gt;</span></td>
+              <td>Muestra código de programación en línea</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;pre&gt;</span></td>
+              <td>Texto preformateado (mantiene espacios y saltos)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;blockquote&gt;</span></td>
+              <td>Cita larga o bloque de cita</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;small&gt;</span></td>
+              <td>Texto más pequeño (notas, legal, etc.)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;mark&gt;</span></td>
+              <td>Texto resaltado o marcado</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;dl&gt;</span></td>
+              <td>Lista de definiciones</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">&lt;dt&gt;</span></td>
+              <td>Término en una lista de definiciones</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Slide 7: CSS 1-10 -->
+      <div class="slide">
+        <h2>
+          <span class="language-badge css-badge">CSS</span> Propiedades 1-10
+        </h2>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 25%">Propiedad</th>
+              <th>Explicación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag-name">color</span></td>
+              <td>Define el color del texto</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">background-color</span></td>
+              <td>Color de fondo de un elemento</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">font-size</span></td>
+              <td>Tamaño de la fuente</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">font-family</span></td>
+              <td>Tipo de fuente a utilizar</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">font-weight</span></td>
+              <td>Grosor de la fuente (normal, bold, 100-900)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">text-align</span></td>
+              <td>Alineación del texto (left, center, right, justify)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">margin</span></td>
+              <td>Espacio exterior alrededor del elemento</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">padding</span></td>
+              <td>Espacio interior dentro del elemento</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">border</span></td>
+              <td>Borde alrededor del elemento</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">width</span></td>
+              <td>Ancho del elemento</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Slide 8: CSS 11-20 -->
+      <div class="slide">
+        <h2>
+          <span class="language-badge css-badge">CSS</span> Propiedades 11-20
+        </h2>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 25%">Propiedad</th>
+              <th>Explicación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag-name">height</span></td>
+              <td>Alto del elemento</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">display</span></td>
+              <td>Tipo de visualización (block, inline, flex, grid, none)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">position</span></td>
+              <td>
+                Método de posicionamiento (static, relative, absolute, fixed)
+              </td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">top, right, bottom, left</span></td>
+              <td>Posición del elemento (usado con position)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">z-index</span></td>
+              <td>Orden de apilamiento de elementos</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">flex</span></td>
+              <td>Propiedad abreviada para elementos flexbox</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">justify-content</span></td>
+              <td>Alineación horizontal en flexbox</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">align-items</span></td>
+              <td>Alineación vertical en flexbox</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">grid-template-columns</span></td>
+              <td>Define columnas en CSS Grid</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">gap</span></td>
+              <td>Espacio entre elementos en flexbox o grid</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Slide 9: CSS 21-30 -->
+      <div class="slide">
+        <h2>
+          <span class="language-badge css-badge">CSS</span> Propiedades 21-30
+        </h2>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 25%">Propiedad</th>
+              <th>Explicación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag-name">opacity</span></td>
+              <td>Transparencia del elemento (0 a 1)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">box-shadow</span></td>
+              <td>Sombra alrededor del elemento</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">border-radius</span></td>
+              <td>Redondea las esquinas del elemento</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">transition</span></td>
+              <td>Animación de transición entre estados</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">transform</span></td>
+              <td>Transformaciones 2D/3D (rotate, scale, translate)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">overflow</span></td>
+              <td>
+                Controla el desbordamiento de contenido (hidden, scroll, auto)
+              </td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">cursor</span></td>
+              <td>Cambia el tipo de cursor al pasar sobre el elemento</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">text-decoration</span></td>
+              <td>Decoración del texto (underline, none, line-through)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">line-height</span></td>
+              <td>Altura de línea del texto</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">letter-spacing</span></td>
+              <td>Espacio entre caracteres</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Slide 10: CSS 31-40 -->
+      <div class="slide">
+        <h2>
+          <span class="language-badge css-badge">CSS</span> Propiedades 31-40
+        </h2>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 25%">Propiedad</th>
+              <th>Explicación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag-name">max-width</span></td>
+              <td>Ancho máximo del elemento</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">min-width</span></td>
+              <td>Ancho mínimo del elemento</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">background-image</span></td>
+              <td>Imagen de fondo</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">background-size</span></td>
+              <td>Tamaño de la imagen de fondo (cover, contain)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">list-style</span></td>
+              <td>Estilo de viñetas en listas</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">float</span></td>
+              <td>Hace flotar el elemento (left, right, none)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">clear</span></td>
+              <td>Controla el comportamiento junto a elementos flotantes</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">visibility</span></td>
+              <td>Visibilidad del elemento (visible, hidden)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">box-sizing</span></td>
+              <td>
+                Cómo se calculan las dimensiones (border-box, content-box)
+              </td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">animation</span></td>
+              <td>Define una animación CSS</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Slide 11: CSS 41-50 -->
+      <div class="slide">
+        <h2>
+          <span class="language-badge css-badge">CSS</span> Propiedades 41-50
+        </h2>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 25%">Propiedad</th>
+              <th>Explicación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag-name">@keyframes</span></td>
+              <td>Define los pasos de una animación</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">:hover</span></td>
+              <td>Pseudo-clase activada al pasar el ratón sobre el elemento</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">:active</span></td>
+              <td>Pseudo-clase activada al hacer clic en el elemento</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">:focus</span></td>
+              <td>Pseudo-clase activada cuando el elemento tiene foco</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">@media</span></td>
+              <td>Consultas de medios para diseño responsive</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">flex-direction</span></td>
+              <td>Dirección de los elementos flexbox (row, column)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">flex-wrap</span></td>
+              <td>
+                Permite que los elementos flexbox se ajusten en múltiples líneas
+              </td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">outline</span></td>
+              <td>Contorno alrededor del elemento (fuera del border)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">vertical-align</span></td>
+              <td>Alineación vertical de elementos en línea</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">white-space</span></td>
+              <td>Manejo de espacios en blanco (nowrap, pre, normal)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Slide 12: JavaScript 1-10 -->
+      <div class="slide">
+        <h2>
+          <span class="language-badge js-badge">JavaScript</span> Métodos 1-10
+        </h2>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 30%">Método/Palabra</th>
+              <th>Explicación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag-name">console.log()</span></td>
+              <td>Muestra información en la consola del navegador</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">let</span></td>
+              <td>
+                Declara una variable con alcance de bloque (puede cambiar)
+              </td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">const</span></td>
+              <td>Declara una constante (no puede cambiar su valor)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">var</span></td>
+              <td>Declara una variable (alcance de función, uso antiguo)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">function</span></td>
+              <td>Define una función reutilizable</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">if / else</span></td>
+              <td>Estructura condicional para tomar decisiones</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">for</span></td>
+              <td>Bucle que repite código un número específico de veces</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">while</span></td>
+              <td>
+                Bucle que repite código mientras una condición sea verdadera
+              </td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">getElementById()</span></td>
+              <td>Selecciona un elemento HTML por su ID</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">querySelector()</span></td>
+              <td>
+                Selecciona el primer elemento que coincide con un selector CSS
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Slide 13: JavaScript 11-20 -->
+      <div class="slide">
+        <h2>
+          <span class="language-badge js-badge">JavaScript</span> Métodos 11-20
+        </h2>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 30%">Método/Palabra</th>
+              <th>Explicación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag-name">querySelectorAll()</span></td>
+              <td>
+                Selecciona todos los elementos que coinciden con un selector
+              </td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">addEventListener()</span></td>
+              <td>Añade un evento a un elemento (click, hover, etc.)</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">innerHTML</span></td>
+              <td>Obtiene o modifica el contenido HTML de un elemento</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">textContent</span></td>
+              <td>Obtiene o modifica el texto de un elemento</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">classList.add()</span></td>
+              <td>Añade una clase CSS a un elemento</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">classList.remove()</span></td>
+              <td>Elimina una clase CSS de un elemento</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">classList.toggle()</span></td>
+              <td>Añade o elimina una clase según su estado actual</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">setAttribute()</span></td>
+              <td>Establece el valor de un atributo de un elemento</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">getAttribute()</span></td>
+              <td>Obtiene el valor de un atributo de un elemento</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">createElement()</span></td>
+              <td>Crea un nuevo elemento HTML</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Slide 14: JavaScript 21-30 -->
+      <div class="slide">
+        <h2>
+          <span class="language-badge js-badge">JavaScript</span> Métodos 21-30
+        </h2>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 30%">Método/Palabra</th>
+              <th>Explicación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag-name">appendChild()</span></td>
+              <td>Añade un elemento hijo al final de otro elemento</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">removeChild()</span></td>
+              <td>Elimina un elemento hijo de un elemento padre</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">setTimeout()</span></td>
+              <td>Ejecuta código después de un tiempo determinado</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">setInterval()</span></td>
+              <td>Ejecuta código repetidamente cada cierto tiempo</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">array.push()</span></td>
+              <td>Añade un elemento al final de un array</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">array.pop()</span></td>
+              <td>Elimina el último elemento de un array</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">array.map()</span></td>
+              <td>Crea un nuevo array transformando cada elemento</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">array.filter()</span></td>
+              <td>
+                Crea un nuevo array con elementos que cumplen una condición
+              </td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">array.forEach()</span></td>
+              <td>Ejecuta una función para cada elemento del array</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">JSON.parse()</span></td>
+              <td>Convierte un texto JSON en un objeto JavaScript</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Slide 15: JavaScript 31-50 -->
+      <div class="slide">
+        <h2>
+          <span class="language-badge js-badge">JavaScript</span> Métodos 31-50
+        </h2>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 30%">Método/Palabra</th>
+              <th>Explicación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag-name">JSON.stringify()</span></td>
+              <td>Convierte un objeto JavaScript en texto JSON</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">fetch()</span></td>
+              <td>Realiza peticiones HTTP para obtener datos</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">promise.then()</span></td>
+              <td>Ejecuta código cuando una promesa se resuelve</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">async / await</span></td>
+              <td>Sintaxis moderna para trabajar con código asíncrono</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">try / catch</span></td>
+              <td>Maneja errores en el código</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">switch</span></td>
+              <td>Estructura condicional para múltiples casos</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">Math.random()</span></td>
+              <td>Genera un número aleatorio entre 0 y 1</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">Math.floor()</span></td>
+              <td>Redondea un número hacia abajo</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">parseInt()</span></td>
+              <td>Convierte un texto en un número entero</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">parseFloat()</span></td>
+              <td>Convierte un texto en un número decimal</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">string.split()</span></td>
+              <td>Divide un texto en un array usando un separador</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">string.join()</span></td>
+              <td>Une elementos de un array en un texto</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">string.toUpperCase()</span></td>
+              <td>Convierte texto a mayúsculas</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">string.toLowerCase()</span></td>
+              <td>Convierte texto a minúsculas</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">array.length</span></td>
+              <td>Devuelve el número de elementos en un array</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">Object.keys()</span></td>
+              <td>Devuelve un array con las claves de un objeto</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">typeof</span></td>
+              <td>Devuelve el tipo de dato de una variable</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">return</span></td>
+              <td>Devuelve un valor desde una función</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">break</span></td>
+              <td>Sale de un bucle o switch</td>
+            </tr>
+            <tr>
+              <td><span class="tag-name">continue</span></td>
+              <td>Salta a la siguiente iteración de un bucle</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="navigation">
+        <button id="prevBtn2" onclick="changeSlide(-1)">← Anterior</button>
+        <button id="nextBtn2" onclick="changeSlide(1)">Siguiente →</button>
+      </div>
+      <div class="slide-counter">
+        <span id="slideNumber2">1</span> / <span id="totalSlides2">15</span>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+/* ============================================
+   PASO 1: RESET Y BODY BÁSICO
+   ============================================ */
+* {
+    margin: 0;           /* Quita espacios externos */
+    padding: 0;          /* Quita espacios internos */
+    box-sizing: border-box;  /* El padding no suma al ancho */
+}
+body.cise {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background: url("../img/cise.png") center;   /* Fuente bonita para todo */
+    background-size: cover;  /* Degradado rosa-rojo */
+    min-height: 100vh;   /* Altura mínima = toda la pantalla */
+    padding: 20px;       /* Separación de los bordes */
+}
+
+/* ============================================
+   PASO 2: CONTAINER Y FORMULARIO-CARD
+   ============================================ */
+
+/* Contenedor principal - centra todo */
+.container {
+    max-width: 500px; /* Ancho máximo de 500px */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+/* Tarjeta del formulario - caja blanca con sombra */
+.formulario-card {
+    background: white;           /* Fondo blanco */
+    padding: 30px;              /* Espacio interno */
+    border-radius: 15px;        /* Esquinas redondeadas */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);  /* Sombra elegante */
+    margin-bottom: 20px;        /* Espacio debajo */
+}
