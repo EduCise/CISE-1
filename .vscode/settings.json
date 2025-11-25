@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/Guia/GuiaInicial.html"
+    "livePreview.defaultPreviewPath": "/Guia/GuiaInicial.html",
+    "liveServer.settings.port": 5001
 }
