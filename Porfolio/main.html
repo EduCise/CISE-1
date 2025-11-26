@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nombre [alumno] - Web Developer</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+   <!-- BARRA DE NAVEGACIÓN -->
+  <nav class="navigation-bar">
+    <div class="navigation-container">
+      <strong>Nombre del Alumno</strong>
+      <button class="mobile-menu-button" onclick="toggleMobileMenu()">☰</button>
+      <ul class="navigation-menu" id="navigationMenu">
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="https://github.com/tu-usuario" target="_blank">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- SECCIÓN PRINCIPAL -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">WEB DEVELOPER</h1>
+      <p class="hero-subtitle">Desarrollador Full Stack</p>
+    </div>
+  </section>
+
+  <!-- CONTENEDOR DE PROYECTOS -->
+  <div class="projects-container" id="proyectos">
+    <h2 class="projects-title">Mis Proyectos</h2>
+
+    <!-- PROYECTO 1 -->
+    <article class="project-card">
+      <div class="project-image-container" onclick="openImageModal(this)">
+        🖥️
+        <!-- Para usar imagen real, descomentar la línea siguiente y añadir la ruta -->
+        <!-- <img src="img/proyecto1.jpg" alt="Proyecto 1"> -->
+      </div>
+      <div class="project-information">
+        <h3 class="project-title">Nombre del Proyecto 1</h3>
+        <p class="project-description">
+          Descripción detallada del proyecto. Explica qué hace, qué problema resuelve 
+          y cuáles son sus características principales.
+        </p>
+        <div class="technology-stack-list">
+          <span class="technology-badge">HTML</span>
+          <span class="technology-badge">CSS</span>
+          <span class="technology-badge">JavaScript</span>
+        </div>
+        <a href="https://github.com/tu-usuario/proyecto1" target="_blank" class="button-primary">
+          Ver en GitHub
+        </a>
+      </div>
+    </article>
+
+    <!-- PROYECTO 2 -->
+    <article class="project-card">
+      <div class="project-image-container" onclick="openImageModal(this)">
+        🏃
+        <!-- <img src="img/proyecto2.jpg" alt="Proyecto 2"> -->
+      </div>
+      <div class="project-information">
+        <h3 class="project-title">Nombre del Proyecto 2</h3>
+        <p class="project-description">
+          Descripción detallada del proyecto. Explica qué hace, qué problema resuelve 
+          y cuáles son sus características principales.
+        </p>
+        <div class="technology-stack-list">
+          <span class="technology-badge">Python</span>
+          <span class="technology-badge">Flask</span>
+          <span class="technology-badge">SQLite</span>
+        </div>
+        <a href="https://github.com/tu-usuario/proyecto2" target="_blank" class="button-primary">
+          Ver en GitHub
+        </a>
+      </div>
+    </article>
+
+    <!-- PROYECTO 3 -->
+    <article class="project-card">
+      <div class="project-image-container" onclick="openImageModal(this)">
+        🍷
+        <!-- <img src="img/proyecto3.jpg" alt="Proyecto 3"> -->
+      </div>
+      <div class="project-information">
+        <h3 class="project-title">Nombre del Proyecto 3</h3>
+        <p class="project-description">
+          Descripción detallada del proyecto. Explica qué hace, qué problema resuelve 
+          y cuáles son sus características principales.
+        </p>
+        <div class="technology-stack-list">
+          <span class="technology-badge">React</span>
+          <span class="technology-badge">Node.js</span>
+          <span class="technology-badge">MongoDB</span>
+          <span class="technology-badge">Express</span>
+        </div>
+        <a href="https://github.com/tu-usuario/proyecto3" target="_blank" class="button-primary">
+          Ver en GitHub
+        </a>
+      </div>
+    </article>
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer-section">
+    <div class="footer-certifications">
+      <div>🎓 CISE Asturias</div>
+    </div>
+    <p class="footer-copyright">&copy; 2025 Nombre Alumno - Web Developer</p>
+  </footer>
+
+  <!-- MODAL PARA AMPLIAR IMAGEN -->
+  <div class="image-modal" id="imageModal" onclick="closeImageModal()">
+    <span class="modal-close-button">&times;</span>
+    <img class="modal-content-image" id="modalImage" alt="Imagen ampliada">
+  </div>
+
+    <script src="js/scritp.js"></script>
+  </body>
+</html>
